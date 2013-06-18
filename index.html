@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>デモ - fancyBoxでYouTubeの動画を再生する</title>
+	<link rel="stylesheet" href="assets/lib/fancybox/jquery.fancybox.css">
+</head>
+<body>
+
+<div id="container">
+	<a href="http://www.youtube.com/embed/QF1NZM360Uc" data-fancybox-type="iframe" class="fancybox">フローティングウィンドウでYouTubeを再生する</a>
+</div>
+
+
+<script type="text/javascript" src="assets/lib/jquery-2.0.2.min.js"></script>
+<script type="text/javascript" src="assets/lib/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('a.fancybox').fancybox({
+			autoSize: false,
+			width: '90%',
+			height: '90%'
+		});
+	});
+</script>
+</body>
+</html>
